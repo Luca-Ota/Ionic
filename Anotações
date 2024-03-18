@@ -1,0 +1,19 @@
+login.service.spec.ts
+
+describe('LoginService', () => {
+	let service: LoginService;
+
+	beforeEach(() => {
+		TestBed.configureTestingModule({});
+		service = TestBed.inject(LoginService);
+	});
+
+	it('deve permitir ao usuario se cadastrar', () => {
+		//arrange (preparação do ambiente)
+		let email = 'rprado@ifsp.com.br';
+		let password = '12345678';
+
+		//act (executa a função principal)
+		let result = cadastrar(email, password);
+
+		//assert (compa
