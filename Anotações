@@ -17,3 +17,65 @@ describe('LoginService', () => {
 		let result = cadastrar(email, password);
 
 		//assert (compa
+----------------------------------------------------------------------------
+
+ionic g service service/database
+
+database.service.spec.ts
+
+
+it('should be created', () => {
+
+
+it('deve gravar informações no banco de dados', () => {
+	// arrange (preparação do ambiente de teste
+	let tabela = 'vendas';
+	let venda = {'produto': 'Notebook', 
+	'marca': 'Samsung',
+	'preço': '4500',
+	'id_vendedor': 12345,
+	'dara': '2024-03-17'
+	};
+
+	//act
+	let status = service.salvar(tabela, venda);
+
+
+	//assert
+	expect(id).toEqual('1');
+}) 
+
+it('deve ler informações do banco de dados', () => {
+
+})
+
+it('deve atualizar informações no banco de dados', () => {
+
+})
+
+it('deve deletar informações do banco de dados', () => {
+
+})
+
+
+----------------------------------------------------------------------------
+
+database.service.ts
+
+export class DatabaseService {
+
+	constructor() {
+
+		/**
+		*Registra um objeto no banco de dados
+		*@param tabela: o nome da tabela que recebe o objeto
+		*@param objeto: o conteudo a ser gravado no bd
+		*/
+
+		salvar(tabela: string, objeto: any){
+		//vamos fingir que gravamos o objeto no bd
+		//... faça a implementação aqui
+		//retorne o resultado real
+		return 1;
+	}
+	
